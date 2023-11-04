@@ -282,10 +282,17 @@ button {
     font-weight: 700;
     color: #fff;
 }
+
+.work-line {
+    width: 900px;
+    border: 2px dashed #c99b67;
+}
+
 .work-main {
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -25px;
 }
 
 .work-content:not(:last-child){
