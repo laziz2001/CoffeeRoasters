@@ -56,6 +56,14 @@ button {
     color: #fff;
 }
 
+.work-main-button {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    background-color: #c99b67;
+}
+
 
 
 /* SITE TOP */
@@ -77,6 +85,20 @@ button {
     padding-bottom: 40px;
 }
 
+.site-logo-img {
+    width: 235px;
+    height: 24px;
+    display: block;
+}
+
+.site-logo-img:hover {
+    opacity: 0.8;
+}
+
+.site-logo-img:active{
+    opacity: 0.6;
+}
+
 .sitenav-list {
     display: flex;
 }
@@ -95,6 +117,14 @@ button {
 
 .nav-link {
     color: #333;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+}
+
+.nav-link:active{
+    opacity: 0.6;
 }
 
 
@@ -271,6 +301,7 @@ button {
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
     background-color: rgb(17, 78, 30);
 }
 
@@ -295,6 +326,11 @@ button {
     margin-top: -25px;
 }
 
+.work-content {
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
 .work-content:not(:last-child){
     margin-right: 20px;
 }
@@ -315,12 +351,55 @@ button {
 }
 
 .work-content-about-number {
+    margin-top: 20px;
+    margin-bottom: 45px;
+    font-size: 60px;
     text-align: end;
+    opacity: 0.8;
+    color: #333;
 }
+
 .work-content-about-title {
+    width: 100%;
+    max-width: 231px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: normal;
+    color: #333;
 }
+
 .work-content-about-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 28px;
+    color: #333;
 }
+
+
+/* FOOTER */
+.site-footer {
+    background-color: rgb(255, 219, 175);
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-socials-link:not(:last-child){
+    margin-right: 30px;
+}
+
+.footer-socials-link img {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
 
 
 
