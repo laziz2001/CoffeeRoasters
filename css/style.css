@@ -2,6 +2,7 @@
     --text-color: #fff;
     --main-text-color: #333;
     --border-color: #c99b67;
+    --accent-color-green: #0a775f;
 }
 
 
@@ -64,7 +65,7 @@ button {
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
-    background-color: #0a775f;
+    background-color: var(--accent-color-green);
     color: var(--text-color);
 }
 
@@ -82,10 +83,11 @@ button {
 .site-top {
     height: 800px;
     margin-bottom: 20px;
-    background-color: rgb(255, 219, 175);
-    background-image: url(../img/Rectangle679.jpg);
-    background-repeat: no-repeat;
-    background-position: left calc(50% + 410px) bottom;
+    background-image: url(../img/bg-intro.jpg);
+}
+
+.site-header {
+
 }
 
 /* HEADER */
@@ -113,29 +115,28 @@ button {
 
 .sitenav-list {
     display: flex;
-}
-
-.nav-item {
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1px;
     list-style: none;
-    text-transform: uppercase;
 }
 
-.nav-item:not(:last-child) {
+
+.sitenav-item:not(:last-child) {
     margin-right: 40px;
 }
 
-.nav-link {
+.sitenav-link {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     color: var(--main-text-color);
 }
 
-.nav-link:hover {
+.sitenav-link:hover {
     opacity: 0.8;
+    color: var(--accent-color-green);
 }
 
-.nav-link:active{
+.sitenav-link:active{
     opacity: 0.6;
 }
 
@@ -143,6 +144,9 @@ button {
 /* HERO MAIN */
 .hero-main {
     display: flex;
+    background-image: url(../img/Rectangle679.jpg);
+    background-repeat: no-repeat;
+    background-position: left calc(50% + 410px) bottom;
 }
 
 .hero-main img {
@@ -414,7 +418,7 @@ button {
 
 
 
-
+/* CSS RETINA */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
@@ -423,7 +427,7 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
     .site-top {
-        background-image: url(../img/Rectangle679@2x.jpg);
+        background-image: url(../img/bg-intro@2x.jpg);
     }
 
 }
